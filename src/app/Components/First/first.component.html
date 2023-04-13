@@ -1,0 +1,29 @@
+<div class="d-flex justify-content-center mt-5">
+  <div class="card shadow rounded" style="width: 400px">
+    <div class="card-body">
+      <form>
+        <div class="form-group">
+          <label for="inputField" style="color: #2c3e50">Input Field</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputField"
+            placeholder="Enter text"
+            (input)="getValue($event)"
+          />
+        </div>
+        <div class="form-group">
+          <p>{{ words }}</p>
+        </div>
+        <button
+          type="submit"
+          class="btn btn-primary btn-block"
+          style="background-color: #3498db; border-color: #3498db"
+          (click)="reset()"
+        >
+          Reset
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

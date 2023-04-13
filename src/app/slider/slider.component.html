@@ -1,0 +1,14 @@
+<div class="d-flex justify-content-center mt-5">
+  <div class="slideshow-container d-flex flex-column" #myDiv>
+    <img
+      [src]="images[slideIndex]"
+      style="width: 320px; height: 480px; object-fit: fill"
+    />
+    <div class="btns d-flex justify-content-between">
+      <button class="prev" (click)="prev()">Prev</button>
+      <button class="next" (click)="next()">Next</button>
+      <button class="stop" (click)="stopSlide()">Stop</button>
+      <button class="start" (click)="startSlide()">Start</button>
+    </div>
+  </div>
+</div>
