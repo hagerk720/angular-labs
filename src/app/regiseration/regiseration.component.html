@@ -1,0 +1,21 @@
+<!-- <input type="text" [(ngModel)]="usrName" [ngClass]="usrName && usrName.length >= 3 ? 'green' : 'red'"/>
+<input type="text" [(ngModel)]="usrAge" [ngClass]="usrAge && +usrAge >= 20 && +usrAge <= 40 ? 'green' : 'red'"/>
+<input type="button" value="Add" (click)="Add()" /> -->
+
+<div class="card">
+  <div class="card-body">
+    <input
+      type="text"
+      [(ngModel)]="usrName"
+      [ngClass]="usrName && usrName.length >= 3 ? 'green' : 'red'"
+      placeholder="Name"
+    />
+    <input
+      type="text"
+      [(ngModel)]="usrAge"
+      [ngClass]="usrAge && +usrAge >= 20 && +usrAge <= 40 ? 'green' : 'red'"
+      placeholder="Age"
+    />
+    <input type="button" value="Add" (click)="Add()" />
+  </div>
+</div>
