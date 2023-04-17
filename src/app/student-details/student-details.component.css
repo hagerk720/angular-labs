@@ -1,0 +1,25 @@
+.avatar-container {
+    width: 6rem;
+    height: 6rem;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .avatar-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .card-header {
+    position: relative;
+    height: 8rem;
+  }
+  
+  .card-header h5 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }

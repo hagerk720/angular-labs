@@ -1,0 +1,53 @@
+<div class="container mt-2">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <div class="form-container" style="background-color: #10334e82">
+        <h2>Registration Form</h2>
+        <form (ngSubmit)="Add()" [formGroup]="registrationForm">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input
+              formControlName="name"
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+            />
+          </div>
+          <div *ngIf="!NameValid">
+            <p>name must be greater than 3 chars</p>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input
+              formControlName="email"
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+            />
+          </div>
+          <div *ngIf="!EmailValid">
+            <p>Email not valid</p>
+          </div>
+          <div class="mb-3">
+            <label for="age" class="form-label">Age</label>
+            <input
+              formControlName="age"
+              type="number"
+              class="form-control"
+              id="age"
+              name="age"
+            />
+          </div>
+          <div *ngIf="!AgeValid">
+            <p>20 &lt; Age &lt; 40</p>
+          </div>
+          <button type="submit" class="btn btn-dark align-items-center">
+            ADD
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
