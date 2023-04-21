@@ -1,0 +1,11 @@
+.custom-font {
+  font-size: 2em;
+  font-family: "Roboto", sans-serif;
+  color: #ffd700;
+}
+.navbar-brand {
+  text-align: center !important;
+}
+.btn {
+  border-color: #ffd700 !important;
+}

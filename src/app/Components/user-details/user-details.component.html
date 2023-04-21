@@ -1,0 +1,23 @@
+<div class="d-flex justify-content-center alien-items-center">
+  <div *ngIf="user; else falseBlock" class="card" style="--rating: 90">
+    <div class="d-flex">
+      <div class="icon">🤖</div>
+      <div class="title mx-2 fw-bold fs-4">{{ user.name }}</div>
+    </div>
+    <div class="mt-5">
+      <p class="description">
+        <span class="fw-bold">Email:</span> {{ user.email }}
+      </p>
+      <p class="description">
+        <span class="fw-bold">Age:</span> {{ user.age }}
+      </p>
+      <p class="description">
+        <span class="fw-bold"> phone: </span>{{ user.phone }}
+      </p>
+    </div>
+  </div>
+</div>
+
+<ng-template #falseBlock>
+  <h1 class="alert alert-danger">Loading...</h1>
+</ng-template>

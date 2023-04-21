@@ -1,0 +1,33 @@
+<div class="form-box" *ngIf="editForm">
+  <p>Add Student</p>
+  <form
+    class="form d-flex flex-column"
+    (ngSubmit)="editUser(name.value, age.value, email.value, phone.value)"
+    [formGroup]="editForm"
+  >
+    <div class="user-box">
+      <input #name class="form-control" type="text" formControlName="name" />
+      <label>Name</label>
+    </div>
+    <div class="user-box">
+      <input #age class="form-control" type="number" formControlName="age" />
+      <label>Age</label>
+    </div>
+    <div class="user-box">
+      <input #email class="form-control" type="email" formControlName="email" />
+      <label>Email</label>
+    </div>
+    <div class="user-box">
+      <input
+        #phone
+        class="form-control"
+        type="text"
+        value="{{ user.phone }}"
+        formControlName="phone"
+      />
+      <label>Phone</label>
+    </div>
+
+    <button class="align-self-center" type="submit">Edit</button>
+  </form>
+</div>

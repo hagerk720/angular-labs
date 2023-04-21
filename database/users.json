@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "name": "radwa",
+      "age": "26",
+      "email": "radwa@g.com",
+      "phone": "01236547890",
+      "id": 3
+    },
+    {
+      "name": "hager khaled",
+      "age": "23",
+      "email": "hager@g.com",
+      "phone": "01234569874",
+      "id": 4
+    }
+  ]
+}
